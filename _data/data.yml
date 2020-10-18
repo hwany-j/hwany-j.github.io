@@ -42,12 +42,17 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      I'm working at Naver for solving difficult problems using machine learning. 
+      I always believe that **AI will change our lives more comfortable than now.**
+      Hence, I have enough passion to do my work such as develop AI servies, experiment for making SOTA model, etc. 
+
+      Currently, my research interest is **Data Uncertainty**. To explain briefly, each of the data has a different
+      impact to model while training. According to this theory, a few data is enough to train the model, and we can reduce the labeling cost. 
+      There are lots of research areas related to data uncertainty, such as 
+      **Active Learning**, **Curriculum Learning**, **Semi-supervised Learning**, **Class Incremental Learning**, etc. 
+      
+      If you want to know my works, please download my [CV]().
+
 education:
     - degree: MSc in Electrical Engineering 
       university: Korean Advanced Institute of Science and Technology (KAIST)
