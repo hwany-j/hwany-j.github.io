@@ -125,12 +125,14 @@ publications:
     papers:
       - title: Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency Regularization
         link: "https://arxiv.org/pdf/2006.11021.pdf"
-        authors: **Jihwan Bang**, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha
+        authors: |
+            **Jihwan Bang**, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha
         conference: Arxiv, 2020
 
       - title: "SINet: Extreme Lightweight Portrait Segmentation Networks with Spatial Squeeze Modules and Information Blocking Decoder"
         link: "https://openaccess.thecvf.com/content_WACV_2020/papers/Park_SINet_Extreme_Lightweight_Portrait_Segmentation_Networks_with_Spatial_Squeeze_Module_WACV_2020_paper.pdf"
-        authors: Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, **Jihwan Bang**, Nojun Kwak
+        authors: |
+            Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, **Jihwan Bang**, Nojun Kwak
         conference: WACV, 2020
 
       - title: "CH-MAC: A Cluster-based, Hybrid TDMA MAC Protocol over Wireless Ad-hoc Networks"
