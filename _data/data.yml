@@ -120,30 +120,32 @@ publications:
       You can list your publications in this section. Lorem ipsum dolor sit
       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
       bibendum fringilla a eu lectus.
+    bold:
+    - Jihwan Bang
     papers:
       - title: Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency Regularization
         link: "https://arxiv.org/pdf/2006.11021.pdf"
-        authors: "**Jihwan Bang**, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha"
+        authors: Jihwan Bang, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha
         conference: Arxiv, 2020
 
       - title: "SINet: Extreme Lightweight Portrait Segmentation Networks with Spatial Squeeze Modules and Information Blocking Decoder"
-        link: "#"
-        authors: "Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, **Jihwan Bang**, Nojun Kwak"
+        link: "https://openaccess.thecvf.com/content_WACV_2020/papers/Park_SINet_Extreme_Lightweight_Portrait_Segmentation_Networks_with_Spatial_Squeeze_Module_WACV_2020_paper.pdf"
+        authors: Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, Jihwan Bang, Nojun Kwak
         conference: WACV, 2020
 
       - title: "CH-MAC: A Cluster-based, Hybrid TDMA MAC Protocol over Wireless Ad-hoc Networks"
-        link: "#"
-        authors: "Hoyong Choi, **Jihwan Bang**, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi"
+        link: "https://ieeexplore.ieee.org/abstract/document/9020769/"
+        authors: Hoyong Choi, Jihwan Bang, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi
         conference: MILCOM, 2019
 
       - title: "ExtremeC3Net: Extreme Lightweight Portrait Segmentation Networks using Advanced C3-modules"
-        link: "#"
-        authors: "Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, **Jihwan Bang**, Nojun Kwak"
+        link: "https://arxiv.org/pdf/1908.03093.pdf"
+        authors: Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, Jihwan Bang, Nojun Kwak
         conference: ArXiv, 2019
 
       - title: "Incentivizing hosts via multilateral cooperation in user-provided networks: A fluid shapley value approach"
-        link: "#"
-        authors: "Hyojung Lee, **Jihwan Bang**, Yung Yi"
+        link: "https://dl.acm.org/doi/abs/10.1145/3209582.3209597"
+        authors: Hyojung Lee, Jihwan Bang, Yung Yi
         conference: Mobihoc, 2018
 
 # skills:
