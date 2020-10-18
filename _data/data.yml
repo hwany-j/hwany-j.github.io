@@ -88,31 +88,31 @@ experiences:
           - Bullet point
           - Bullet point
 projects:
-    # title: Projects
-    # intro: >
-    #   You can list your side projects or open source libraries in this
-    #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    # assignments:
-    #   - title: Velocity
-    #     link: "#hook"
-    #     tagline: "A responsive website template designed to help startups promote, market and sell their products."
+    title: Projects
+    intro: >
+      You can list your side projects or open source libraries in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    assignments:
+      - title: Velocity
+        link: "#hook"
+        tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
-    #   - title: DevStudio
-    #     link: "#"
-    #     tagline: "A responsive website template designed to help web developers/designers market their services."
+      - title: DevStudio
+        link: "#"
+        tagline: "A responsive website template designed to help web developers/designers market their services."
 
-    #   - title: Tempo
-    #     link: "#"
-    #     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: Tempo
+        link: "#"
+        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
-    #   - title: Atom
-    #     link: "#"
-    #     tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+      - title: Atom
+        link: "#"
+        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
 
-    #   - title: Delta
-    #     link: "#"
-    #     tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      - title: Delta
+        link: "#"
+        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
     title: Publications
@@ -122,51 +122,51 @@ publications:
       bibendum fringilla a eu lectus.
     papers:
       - title: Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency Regularization
-        link: "https://arxiv.org/pdf/2006.11021.pdf"
+        link: "#"
         authors: Jihwan Bang, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha
         conference: Arxiv, 2020
 
       - title: "SINet: Extreme Lightweight Portrait Segmentation Networks with Spatial Squeeze Modules and Information Blocking Decoder"
-        link: "https://openaccess.thecvf.com/content_WACV_2020/papers/Park_SINet_Extreme_Lightweight_Portrait_Segmentation_Networks_with_Spatial_Squeeze_Module_WACV_2020_paper.pdf"
+        link: "#"
         authors: Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, Jihwan Bang, Nojun Kwak
         conference: WACV, 2020
 
       - title: "CH-MAC: A Cluster-based, Hybrid TDMA MAC Protocol over Wireless Ad-hoc Networks"
-        link: "http://lanada.kaist.ac.kr/Publication/Conference/HY__Cluster_based_TDMA__Milcom_2019.pdf"
+        link: "#"
         authors: Hoyong Choi, Jihwan Bang, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi
         conference: MILCOM, 2019
 
       - title: "ExtremeC3Net: Extreme Lightweight Portrait Segmentation Networks using Advanced C3-modules"
-        link: "https://arxiv.org/pdf/1908.03093.pdf"
+        link: "#"
         authors: Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, Jihwan Bang, Nojun Kwak
         conference: ArXiv, 2019
 
       - title: "Incentivizing hosts via multilateral cooperation in user-provided networks: A fluid shapley value approach"
-        link: "http://lanada.kaist.ac.kr/Publication/Conference/Incentivizing_hosts_via_multilateral_cooperation_in_user_provided_networks.pdf"
+        link: "#"
         authors: Hyojung Lee, Jihwan Bang, Yung Yi
         conference: Mobihoc, 2018
 
 skills:
-#     title: Skills &amp; Proficiency
+    title: Skills &amp; Proficiency
 
-#     toolset:
-#       - name: Python & Django
-#         level: 98%
+    toolset:
+      - name: Python & Django
+        level: 98%
 
-#       - name: Javascript & jQuery
-#         level: 98%
+      - name: Javascript & jQuery
+        level: 98%
 
-#       - name: Angular
-#         level: 98%
+      - name: Angular
+        level: 98%
 
-#       - name: HTML5 & CSS
-#         level: 95%
+      - name: HTML5 & CSS
+        level: 95%
 
-#       - name: Ruby on Rails
-#         level: 85%
+      - name: Ruby on Rails
+        level: 85%
 
-#       - name: Sketch & Photoshop
-#         level: 60%
+      - name: Sketch & Photoshop
+        level: 60%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
