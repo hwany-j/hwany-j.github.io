@@ -122,28 +122,28 @@ publications:
       bibendum fringilla a eu lectus.
     papers:
       - title: Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency Regularization
-        link: "#"
-        authors: Jihwan Bang, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha
+        link: "https://arxiv.org/pdf/2006.11021.pdf"
+        authors: "**Jihwan Bang**, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha"
         conference: Arxiv, 2020
 
       - title: "SINet: Extreme Lightweight Portrait Segmentation Networks with Spatial Squeeze Modules and Information Blocking Decoder"
         link: "#"
-        authors: Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, Jihwan Bang, Nojun Kwak
+        authors: "Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, **Jihwan Bang**, Nojun Kwak"
         conference: WACV, 2020
 
       - title: "CH-MAC: A Cluster-based, Hybrid TDMA MAC Protocol over Wireless Ad-hoc Networks"
         link: "#"
-        authors: Hoyong Choi, Jihwan Bang, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi
+        authors: "Hoyong Choi, **Jihwan Bang**, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi"
         conference: MILCOM, 2019
 
       - title: "ExtremeC3Net: Extreme Lightweight Portrait Segmentation Networks using Advanced C3-modules"
         link: "#"
-        authors: Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, Jihwan Bang, Nojun Kwak
+        authors: "Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, **Jihwan Bang**, Nojun Kwak"
         conference: ArXiv, 2019
 
       - title: "Incentivizing hosts via multilateral cooperation in user-provided networks: A fluid shapley value approach"
         link: "#"
-        authors: Hyojung Lee, Jihwan Bang, Yung Yi
+        authors: "Hyojung Lee, **Jihwan Bang**, Yung Yi"
         conference: Mobihoc, 2018
 
 # skills:
