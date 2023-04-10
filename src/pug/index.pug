@@ -46,7 +46,7 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#publications') Publications
                     li.nav-item 
-                        a.nav-link.js-scroll-trigger(href='#talks') Talks
+                        a.nav-link.js-scroll-trigger(href='#talks') Services&Talks
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#patents') Patents
                     li.nav-item 
@@ -66,12 +66,13 @@ html(lang='en')
                     .h5.mb-7
                         | (+82) 10-3439-1422 
                     .h5.mb-5
-                        a(href='mailto:name@email.com') jhbang1422@gmail.com
+                        <a href='mailto:name@email.com'>jhbang1422@gmail.com</a> | <a href="mailto:name@email.com">jihwbang@qti.qualcomm.com</a>
                     p.lead.mb-5
-                        | 3+ years experienced AI/ML researcher. I'm interested in building state-of-the-art model and data pipeline to serve well-trained model. 
-                        | While working at <a href="https://www.navercorp.com/en">NAVER</a>, I have experienced to build AI models, especially face recognition, face spoofing detection and portrait segmentation.
-                        | Also, I have experienced to build data and model serving pipeline focusing on how to maintain model performance with small labelling budget (Active Learning) 
-                        | and efficient training methods (Continual Learning). If you have more intrests about my works, please download my 
+                        | A senior AI/ML researcher at <a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research">Qualcomm AI Research</a>. 
+                        | Prior to this, I worked at <a href="https://www.navercorp.com/en">NAVER</a>, and gained valuable experience in developing AI models, 
+                        | especially for face recognition, face spoofing detection and portrait segmentation.
+                        | Also, I worked to build data and model serving pipeline with a focus on maintaining model performance with limited label budget (Active Learning) 
+                        | and using efficient training methods (Continual Learning). If you have more intrests about my works, please download my 
                         | <a href='assets/pdf/Bang_Jihwan_Resume.pdf'>resume</a>.
                     .social-icons.mb-5
                         a.social-icon(href='https://www.linkedin.com/in/jihwan-bang/')
@@ -86,6 +87,7 @@ html(lang='en')
                     h3
                         | News 
                     p.lead.mb-5 
+                        | [2023.04] I joined <a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research">Qualcomm AI Research</a>. <br>
                         | [2023.01] Two papers are accepted in <a href='https://iclr.cc/'>ICLR 2023</a>. <br>
                         | [2022.08] Our Meta-Query-Net paper is accepted in <a href='https://nips.cc/'>NeurIPS 2022</a>. <br>
                         | [2022.03] Our PuriDivER paper is accepted in <a href='https://cvpr2022.thecvf.com/'>CVPR 2022</a>. <br>
@@ -100,13 +102,18 @@ html(lang='en')
             section#experience.resume-section
                .resume-section-content
                     h3.mb-5 Experiences
-
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h4.mb-0 Senior AI Researcher
+                            .subheading.mb-3 Qualcomm AI Research
+                        .flex-shrink-0
+                            p.text-primary Apr. 2023 - Present
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h4.mb-0 AI Researcher
                             .subheading.mb-3 Naver Corp.
                         .flex-shrink-0
-                            p.text-primary Mar. 2019 - Present
+                            p.text-primary Mar. 2019 - Apr. 2023 
 
             hr.m-0
 
@@ -144,7 +151,7 @@ html(lang='en')
                             div Research on open-vocabulary or zero-shot object detectors
                             div Design API to use deployed zero-shot object detectors
                         .flex-shrink-0
-                            p.text-primary Feb. 2022 - Present
+                            p.text-primary Feb. 2022 - Apr. 2023
                     
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -154,7 +161,7 @@ html(lang='en')
                             div Apply active learning to ML pipeline for selecting informative data from the incoming streams
                             span <h6 style='display:inline'>Related Achievement: </h6>C4, C5, C6, C7, C8, A2, P1
                         .flex-shrink-0
-                            p.text-primary Mar. 2019 - Present
+                            p.text-primary Mar. 2019 - Apr. 2023
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -185,44 +192,30 @@ html(lang='en')
                     span.mb-5 * authors contributed equally. See also my 
                         a(href="https://scholar.google.com/citations?user=molKYzwAAAAJ&hl=ko") Google Scholar
                         span .
-                    h4.mb-5 Conferences Published
+                    h4.mb-5 Conferences
                     ul.fa-ul.mb-0
                         li 
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/c8.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/set_simclr.png', width='280' )
                                 .flex-grow-1
                                     h5 [C8] Self-Supervised Set Representation Learning for Unsupervised Meta-Learning
                                     span Dong Bok Lee, Seanie Lee, Kenji Kawaguchi, Yunji Kim, <h6 style='display:inline'>Jihwan Bang</h6>, Jung-Woo Ha, Sung Ju Hwang
                                     div ICLR 2023
-                                    //- div
-                                        //- a(href='assets/pdf/meta_query_net.pdf') [paper]
-                                        //- span  |
-                                        //- a(href='https://github.com/kaist-dmlab/MQNet') [code]
-                                        //- span  | 
-                                        //- a(href='assets/pdf/puridiver_poster.pdf') [poster]
-                                        //- span | 
-                                        //- a(href='https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang') [video] 
+                                    
                         li 
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/c7.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/sdp.png', width='280')
                                 .flex-grow-1
                                     h5 [C7] Online Boundary-Free Continual Learning by Scheduled Data Prior
                                     span Hyunseo Koh, Minhyuk Seo, <h6 style='display:inline'>Jihwan Bang</h6>, Hwanjun Song, Deokki Hong, Seulki Park, Jung-Woo Ha, Jonghyun Choi
                                     div ICLR 2023
-                                    //- div
-                                        //- a(href='assets/pdf/meta_query_net.pdf') [paper]
-                                        //- span  |
-                                        //- a(href='https://github.com/kaist-dmlab/MQNet') [code]
-                                        //- span  | 
-                                        //- a(href='assets/pdf/puridiver_poster.pdf') [poster]
-                                        //- span | 
-                                        //- a(href='https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang') [video] 
+                    
                         li 
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/meta_query_net.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/meta_query_net.png', width='280')
                                 .flex-grow-1
                                     h5 [C6] Meta-Query-Net: Resolving Purity-Informativeness Dilemma in Open-set Active Learning
                                     span Dongmin Park, Yooju Shin, <h6 style='display:inline'>Jihwan Bang</h6>, Youngjun Lee, Hwanjun Song, Jae-Gil Lee
@@ -231,14 +224,11 @@ html(lang='en')
                                         a(href='assets/pdf/meta_query_net.pdf') [paper]
                                         span  |
                                         a(href='https://github.com/kaist-dmlab/MQNet') [code]
-                                        //- span  | 
-                                        //- a(href='assets/pdf/puridiver_poster.pdf') [poster]
-                                        //- span | 
-                                        //- a(href='https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang') [video]
+
                         li 
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/puridiver.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/puridiver.png', width='280')
                                 .flex-grow-1
                                     h5 [C5] Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries
                                     h6(style='display:inline') Jihwan Bang,  
@@ -255,7 +245,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/rainbow.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/rainbow.png', width='280')
                                 .flex-grow-1
                                     h5 [C4] Rainbow Memory: Continual Learning with a Memory of Diverse Samples
                                     h6(style='display:inline') Jihwan Bang*,  
@@ -272,7 +262,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/sinet.png', width='140', height='140')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/sinet.png', width='280')
                                 .flex-grow-1
                                     h5 [C3] SINet: Extreme Lightweight Portrait Segmentation Networks with Spatial Squeeze Modules and Information Blocking Decoder
                                     span Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, <h6 style='display:inline'>Jihwan Bang</h6>, Nojun Kwak    
@@ -284,7 +274,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/chmac.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/chmac.png', width='280')
                                 .flex-grow-1
                                     h5 [C2] CH-MAC: A Cluster-based, Hybrid TDMA MAC Protocol over Wireless Ad-hoc Networks
                                     span Hoyong Choi, <h6 style='display:inline'>Jihwan Bang</h6>, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi
@@ -294,7 +284,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/upn.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/upn.png', width='280')
                                 .flex-grow-1
                                     h5 [C1] Incentivizing Hosts via Multilateral Cooperation in User-Provided Networks: A Fluid Shapley Value Approach
                                     span Hyojung Lee, <h6 style='display:inline'>Jihwan Bang</h6>, Yung Yi
@@ -307,7 +297,19 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/asr_al.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/prompt-ovd.png', width='280')
+                                .flex-grow-1
+                                    h5 [A3] Prompt-Guided Transformers for End-to-End Open-Vocabulary Object Detection
+                                    span Hwanjun Song*, <h6 style='display:inline'>Jihwan Bang*</h6>  
+                                    div ArXiv 2023
+                                    div
+                                        a(href='assets/pdf/prompt-ovd.pdf') [paper]
+                                        span   |   
+                                        a(href='https://github.com/songhwanjun/Prompt-OVD') [code]  
+                        li
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                                .flex-basis-1
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/asr_al.png', width='280')
                                 .flex-grow-1
                                     h5 [A2] Boosting Active Learning for Speech Recognition with Noisy Pseudo-labeled Samples
                                     h6(style='display:inline') Jihwan Bang*,  
@@ -319,7 +321,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/extremec3net.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/extremec3net.png', width='280')
                                 .flex-grow-1
                                     h5 [A1] ExtremeC3Net: Extreme Lightweight Portrait Segmentation Networks using Advanced C3-modules
                                     span Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, <h6 style='display:inline'>Jihwan Bang</h6>, Nojun Kwak   
@@ -331,7 +333,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/cloud_drone.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/cloud_drone.png', width='280')
                                 .flex-grow-1
                                     h5 [M3] On the Efficiency of Running Machine Learning Tasks for Drone-Based Target Tracking : Cloud-Based vs. Drone-Based
                                     span Kyeonghwan Son, Daewoo Kim, <h6 style='display:inline'>Jihwan Bang</h6>, Wanju Kang, Seeun Yoon, Yoonpyo Koo, Hyunho Yeo, Jaehyung Ha, Dongsu Han, Yung Yi
@@ -340,7 +342,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/aidrone.png', width='140', height='100')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/aidrone.png', width='280')
                                 .flex-grow-1
                                     h5 [M2] Ai-based drone object tracking system: design and implementation
                                     span Daewoo Kim, Wanju Kang, Yoonpyo Koo, <h6 style='display:inline'>Jihwan Bang</h6>, Kyeonghwan Son, Hostallero David, Seeun Yoon, Hyunho Yeo, Jaehyung Ha, Nansol Seo, Dongsu Han, Yung Yi
@@ -349,7 +351,7 @@ html(lang='en')
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
-                                    img.thumbnail.mx-2.mb-2(src='assets/img/multihop_voice.png', width='140', height='70')
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/multihop_voice.png', width='280')
                                 .flex-grow-1
                                     h5 [M1] An Implementation of Multi-hop Voice Communication System Using Drones
                                     span Yoonpyo Koo, <h6 style='display:inline'>Jihwan Bang</h6>, Kyeonghwan Son, Suho Shin, Sumyeong Ahn, Yung Yi, Jeong-Hun Yu, Jae-Sin Shin
@@ -361,12 +363,43 @@ html(lang='en')
             //Talks
             section#talks.resume-section
                 .resume-section-content
+                    h3.mb-5 Reviews 
+                    ul.fa-ul.mb-0 
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5 
+                                .flex-grow-1 
+                                    h5 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+                                    div 2021, 2022, 2023
+
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5 
+                                .flex-grow-1 
+                                    h5 IEEE/CVF European Conference on Computer Vision (ECCV) 
+                                    div 2022
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5 
+                                .flex-grow-1 
+                                    h5 IEEE/CVF International Conference on Computer Vision (ICCV) 
+                                    div 2023            
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5 
+                                .flex-grow-1 
+                                    h5 International Conference on Machine Learning (ICML)
+                                    div 2022, 2023
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5 
+                                .flex-grow-1 
+                                    h5  Conference on Neural Information Processing Systems (NeurIPS)
+                                    div 2022, 2023
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5 
+                                .flex-grow-1 
+                                    h5  Conference on Lifelong Learning Agents (CoLLAs)
+                                    div 2023
                     h3.mb-5 Talks
                     ul.fa-ul.mb-0
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                                //- .flex-basis-1
-                                //-     img.thumbnail.mx-2.mb-2(src='assets/img/deview2020.png', width='140', height='140')
                                 .flex-grow-1
                                     h5 [T2] Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries
                                     div Korean Artificial Intelligence Association 
@@ -375,8 +408,6 @@ html(lang='en')
 
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                                //- .flex-basis-1
-                                //-     img.thumbnail.mx-2.mb-2(src='assets/img/deview2020.png', width='140', height='140')
                                 .flex-grow-1
                                     h5 [T1] Low Price, High Quality: Improve Model Performance with Small Labelling Cost
                                     div NAVER DEVIEW 2020
