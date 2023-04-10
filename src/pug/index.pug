@@ -68,8 +68,8 @@ html(lang='en')
                     .h5.mb-5
                         a(href='mailto:name@email.com') jhbang1422@gmail.com
                     p.lead.mb-5
-                        | 3+ years experienced AI/ML research engineer. I'm interested in building state-of-the-art model and data pipeline to serve well-trained model. 
-                        | While working at NAVER, I have experienced to build AI models, especially face recognition, face spoofing detection and portrait segmentation.
+                        | 3+ years experienced AI/ML researcher. I'm interested in building state-of-the-art model and data pipeline to serve well-trained model. 
+                        | While working at <a href="https://www.navercorp.com/en">NAVER</a>, I have experienced to build AI models, especially face recognition, face spoofing detection and portrait segmentation.
                         | Also, I have experienced to build data and model serving pipeline focusing on how to maintain model performance with small labelling budget (Active Learning) 
                         | and efficient training methods (Continual Learning). If you have more intrests about my works, please download my 
                         | <a href='assets/pdf/Bang_Jihwan_Resume.pdf'>resume</a>.
@@ -86,10 +86,12 @@ html(lang='en')
                     h3
                         | News 
                     p.lead.mb-5 
-                        | [2021.03] Our PuriDivER paper is accepted in <a href='https://cvpr2022.thecvf.com/'>CVPR 2022</a> <br>
+                        | [2023.01] Two papers are accepted in <a href='https://iclr.cc/'>ICLR 2023</a>. <br>
+                        | [2022.08] Our Meta-Query-Net paper is accepted in <a href='https://nips.cc/'>NeurIPS 2022</a>. <br>
+                        | [2022.03] Our PuriDivER paper is accepted in <a href='https://cvpr2022.thecvf.com/'>CVPR 2022</a>. <br>
                         | [2021.12] Got CLOVA WOW Award!! <br>
                         | [2021.12] New patent is filed! <br>
-                        | [2021.02] Our rainbow memory paper is accepted in <a href='https://cvpr2021.thecvf.com'>CVPR 2021</a> <br>
+                        | [2021.02] Our rainbow memory paper is accepted in <a href='https://cvpr2021.thecvf.com'>CVPR 2021</a>. <br>
 
 
             hr.m-0
@@ -101,7 +103,7 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h4.mb-0 AI Research Engineer 
+                            h4.mb-0 AI Researcher
                             .subheading.mb-3 Naver Corp.
                         .flex-shrink-0
                             p.text-primary Mar. 2019 - Present
@@ -137,39 +139,119 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h4.mb-0 Face Sign Entrance Gate 
-                            //- p 
-                                //- | Face Sign is the one of the hottest technology in AI/ML domain. Accordingly, NAVER also mount face sign to the entrance gate of new building (1784).
-                                //- | It needs not only several AI techniques such as Face Recognition (FR), Face Detection (FD), and Face Spoofing Detection (FSD) but also data pipeline for updating model. 
-                                //- | In 2022, we launched our service in 1784 building. 
+                            h4.mb-0 Hawkeye
+                            .subheading.mb-3 Open-Vocabulary/Zero-Shot Object Detector
+                            div Research on open-vocabulary or zero-shot object detectors
+                            div Design API to use deployed zero-shot object detectors
                         .flex-shrink-0
-                            p.text-primary Mar. 2021 - Present
+                            p.text-primary Feb. 2022 - Present
+                    
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h4.mb-0 Delphi
+                            .subheading.mb-3 Efficient and Automated ML Pipeline for selecting data and finetuning model
+                            div Design Delphi structure and build up each component in the pipeline
+                            div Apply active learning to ML pipeline for selecting informative data from the incoming streams
+                            span <h6 style='display:inline'>Related Achievement: </h6>C4, C5, C6, C7, C8, A2, P1
+                        .flex-shrink-0
+                            p.text-primary Mar. 2019 - Present
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h4.mb-0 FaceSign
+                            .subheading.mb-3 Identity Authentication System using Face without Any Cards
+                            div Design the pipeline to get the best performance in FaceSign
+                            div Design spoofing detection model to prevent recognizing fake faces
+                            span <h6 style='display:inline'>Related Achievement: </h6>A1, C3, P2
+                        .flex-shrink-0
+                            p.text-primary Jul. 2020 - Jan. 2022
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h4.mb-0 Observer
+                            .subheading.mb-3 Drone-based Object Tracking System
+                            div Design AI platform for fog computing and build up the cloud-based AI platform
+                            div Implement deep reinforcement learning algorithm for autonomous drone control
+                            span <h6 style='display:inline'>Related Achievement: </h6>M1, M2, M3
+                        .flex-shrink-0
+                            p.text-primary Apr. 2017 - Dec. 2017
 
             hr.m-0
 
             // Publications
             section#publications.resume-section
                 .resume-section-content
-                    h3.mb-5 Publications
+                    h3.mb-2 Publications
+                    span.mb-5 * authors contributed equally. See also my 
+                        a(href="https://scholar.google.com/citations?user=molKYzwAAAAJ&hl=ko") Google Scholar
+                        span .
                     h4.mb-5 Conferences Published
-                    ul.fa-ul.mb-0 
+                    ul.fa-ul.mb-0
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                                .flex-basis-1
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/c8.png', width='140', height='100')
+                                .flex-grow-1
+                                    h5 [C8] Self-Supervised Set Representation Learning for Unsupervised Meta-Learning
+                                    span Dong Bok Lee, Seanie Lee, Kenji Kawaguchi, Yunji Kim, <h6 style='display:inline'>Jihwan Bang</h6>, Jung-Woo Ha, Sung Ju Hwang
+                                    div ICLR 2023
+                                    //- div
+                                        //- a(href='assets/pdf/meta_query_net.pdf') [paper]
+                                        //- span  |
+                                        //- a(href='https://github.com/kaist-dmlab/MQNet') [code]
+                                        //- span  | 
+                                        //- a(href='assets/pdf/puridiver_poster.pdf') [poster]
+                                        //- span | 
+                                        //- a(href='https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang') [video] 
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                                .flex-basis-1
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/c7.png', width='140', height='100')
+                                .flex-grow-1
+                                    h5 [C7] Online Boundary-Free Continual Learning by Scheduled Data Prior
+                                    span Hyunseo Koh, Minhyuk Seo, <h6 style='display:inline'>Jihwan Bang</h6>, Hwanjun Song, Deokki Hong, Seulki Park, Jung-Woo Ha, Jonghyun Choi
+                                    div ICLR 2023
+                                    //- div
+                                        //- a(href='assets/pdf/meta_query_net.pdf') [paper]
+                                        //- span  |
+                                        //- a(href='https://github.com/kaist-dmlab/MQNet') [code]
+                                        //- span  | 
+                                        //- a(href='assets/pdf/puridiver_poster.pdf') [poster]
+                                        //- span | 
+                                        //- a(href='https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang') [video] 
+                        li 
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                                .flex-basis-1
+                                    img.thumbnail.mx-2.mb-2(src='assets/img/meta_query_net.png', width='140', height='100')
+                                .flex-grow-1
+                                    h5 [C6] Meta-Query-Net: Resolving Purity-Informativeness Dilemma in Open-set Active Learning
+                                    span Dongmin Park, Yooju Shin, <h6 style='display:inline'>Jihwan Bang</h6>, Youngjun Lee, Hwanjun Song, Jae-Gil Lee
+                                    div NeurIPS 2022
+                                    div
+                                        a(href='assets/pdf/meta_query_net.pdf') [paper]
+                                        span  |
+                                        a(href='https://github.com/kaist-dmlab/MQNet') [code]
+                                        //- span  | 
+                                        //- a(href='assets/pdf/puridiver_poster.pdf') [poster]
+                                        //- span | 
+                                        //- a(href='https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang') [video]
                         li 
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
                                     img.thumbnail.mx-2.mb-2(src='assets/img/puridiver.png', width='140', height='100')
                                 .flex-grow-1
                                     h5 [C5] Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries
-                                    h6(style='display:inline') Jihwan Bang*,  
+                                    h6(style='display:inline') Jihwan Bang,  
                                     span Hyunseo Koh, Seulki Park, Hwanjun Song, Jung-Woo Ha, Jonghyun Choi
                                     div CVPR 2022
                                     div
-                                        a(href='assets/pdf/puridiver.pdf') [pdf]
-                                        span  
+                                        a(href='assets/pdf/puridiver.pdf') [paper]
+                                        span  |
                                         a(href='https://github.com/clovaai/puridiver') [code]
-                                        span 
-                                        a(href='') [slide]
-                                        span
-                                        a(href='') [video]
+                                        span  | 
+                                        a(href='assets/pdf/puridiver_poster.pdf') [poster]
+                                        span | 
+                                        a(href='https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang') [video]
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
@@ -180,11 +262,11 @@ html(lang='en')
                                     span Heesu Kim*, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi    
                                     div CVPR 2021
                                     div
-                                        a(href='assets/pdf/rainbow_memory.pdf') [pdf]
+                                        a(href='assets/pdf/rainbow_memory.pdf') [paper]
                                         span   |   
                                         a(href='https://github.com/clovaai/rainbow-memory') [code] 
                                         span   |
-                                        a(href='https://www.slideshare.net/JihwanBang/cvpr2021-rainbow-memory-continual-learning-with-a-memory-of-diverse-samples') [slide]
+                                        a(href='assets/pdf/rainbow_memory_poster.pdf') [poster]
                                         span   | 
                                         a(href='https://www.youtube.com/watch?v=65vxyCKQip4') [video]
                         li
@@ -196,7 +278,7 @@ html(lang='en')
                                     span Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, <h6 style='display:inline'>Jihwan Bang</h6>, Nojun Kwak    
                                     div WACV 2020
                                     div
-                                        a(href='assets/pdf/sinet.pdf') [pdf]
+                                        a(href='assets/pdf/sinet.pdf') [paper]
                                         span   |   
                                         a(href='https://github.com/HYOJINPARK/ExtPortraitSeg') [code] 
                         li
@@ -208,7 +290,7 @@ html(lang='en')
                                     span Hoyong Choi, <h6 style='display:inline'>Jihwan Bang</h6>, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi
                                     div MILCOM 2019
                                     div
-                                        a(href='assets/pdf/upn.pdf') [pdf]
+                                        a(href='assets/pdf/upn.pdf') [paper]
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-basis-1
@@ -218,7 +300,7 @@ html(lang='en')
                                     span Hyojung Lee, <h6 style='display:inline'>Jihwan Bang</h6>, Yung Yi
                                     div Mobihoc 2018
                                     div
-                                        a(href='assets/pdf/upn.pdf') [pdf]
+                                        a(href='assets/pdf/upn.pdf') [paper]
 
                     h4.mb-5 Preprints (ArXiv)
                     ul.fa-ul.mb-0 
@@ -232,7 +314,7 @@ html(lang='en')
                                     span Heesu Kim*, YoungJoon Yoo, Jung-Woo Ha    
                                     div ArXiv 2020
                                     div
-                                        a(href='assets/pdf/active_learning_asr.pdf') [pdf]
+                                        a(href='assets/pdf/active_learning_asr.pdf') [paper]
 
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
@@ -243,7 +325,7 @@ html(lang='en')
                                     span Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, <h6 style='display:inline'>Jihwan Bang</h6>, Nojun Kwak   
                                     div ArXiv 2019
                                     div
-                                        a(href='assets/pdf/extremec3net.pdf') [pdf]
+                                        a(href='assets/pdf/extremec3net.pdf') [paper]
                     h4.mb-5 MISC: Domestic Publications
                     ul.fa-ul.mb-0 
                         li
@@ -286,15 +368,23 @@ html(lang='en')
                                 //- .flex-basis-1
                                 //-     img.thumbnail.mx-2.mb-2(src='assets/img/deview2020.png', width='140', height='140')
                                 .flex-grow-1
-                                    h5.fa-li 
-                                        i.fas.fa-microphone-lines
-                                    h5 Low Price, High Quality: Improve Model Performance with Small Labelling Cost
-                                    h6 Jihwan Bang
+                                    h5 [T2] Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries
+                                    div Korean Artificial Intelligence Association 
+                                    
+                                        
+
+                        li
+                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                                //- .flex-basis-1
+                                //-     img.thumbnail.mx-2.mb-2(src='assets/img/deview2020.png', width='140', height='140')
+                                .flex-grow-1
+                                    h5 [T1] Low Price, High Quality: Improve Model Performance with Small Labelling Cost
                                     div NAVER DEVIEW 2020
                                     div
                                         a(href='https://www.slideshare.net/JihwanBang/low-price-high-quality-naver-deview-2020') [slide]
                                         span   |
                                         a(href='https://tv.naver.com/v/16971189') [video]
+                        
             
             hr.m-0
 
@@ -306,20 +396,12 @@ html(lang='en')
                         li 
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-grow-1
-                                    h5.fa-li 
-                                        i.fas.fa-file-lines
-                                    h5 Face Recognition System and Method for Controlling the Same
-                                    h6(style='display:inline') Jihwan Bang,  
-                                    span Sungho Kim
+                                    h5 [P2] Face Recognition System and Method for Controlling the Same
                                     div kr 10-2021-0183218
                         li
                             .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                                 .flex-grow-1
-                                    h5.fa-li
-                                        i.fas.fa-file-lines
-                                    h5 Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency Regularization
-                                    h6(style='display:inline') Jihwan Bang,  
-                                    span Heesu Kim, YoungJoon Yoo, Jung-Woo Ha
+                                    h5 [P1] Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency Regularization
                                     div kr 10-2020-0111929
             
             hr.m-0
@@ -334,7 +416,7 @@ html(lang='en')
                                 .flex-grow-1 
                                     h5.fa-li 
                                         i.fas.fa-award
-                                    h5 CLOVA WOW(Innovative) Project: Face Sign Gate
+                                    h5 CLOVA WOW(Innovative) Project: FaceSign
                                     div NAVER CLOVA
                                 .flex-shrink-1
                                     p.text-primary 2021
