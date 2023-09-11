@@ -10020,7 +10020,10 @@ body {
     padding-left: 17rem;
   }
 }
-h1,
+h1 {
+  font-size: 2rem;
+}
+
 h2,
 h3,
 h4,
