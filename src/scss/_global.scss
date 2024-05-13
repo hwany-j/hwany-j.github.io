@@ -15,14 +15,22 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+    font-size: 1.15rem;
+}
+
 h6 {
     color: $black;
     // text-transform: uppercase;
 }
 
 h1 {
+    font-size: 2.0rem;
     line-height: 1;
+}
+
+h3 {
+    font-size: 2.0rem;
 }
 
 p.lead {

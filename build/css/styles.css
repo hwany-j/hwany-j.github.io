@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Resume v6.0.3 (https://hwany-j.github.io)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
 /*!
@@ -10024,13 +10024,21 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+  font-size: 1.15rem;
+}
+
 h6 {
   color: #000;
 }
 
 h1 {
+  font-size: 2rem;
   line-height: 1;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p.lead {
