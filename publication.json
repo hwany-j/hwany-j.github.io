@@ -1,0 +1,12 @@
+{
+    "publications": [
+        {
+            "order": "0",
+            "title": "Prompt-Guided Transformers for End-to-End Open-Vocabulary Object Detection",
+            "authors": "Hwanjun Song*, Jihwan Bang*",
+            "venue": "Pattern Recognition",
+            "year": "2024",
+            "source_code": "None"
+        }
+    ]
+}
