@@ -226,4 +226,109 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Load publications dynamically from JSON
+   */
+  async function loadPublications() {
+    try {
+      console.log('Loading publications...');
+      const response = await fetch('./publication.json');
+      console.log('Response status:', response.status);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      console.log('Loaded data:', data);
+      
+      // Load main publications
+      const publicationsContainer = document.querySelector('#publications-list');
+      console.log('Publications container:', publicationsContainer);
+      
+      if (publicationsContainer) {
+        publicationsContainer.innerHTML = '';
+        
+        data.publications.forEach(pub => {
+          const li = createPublicationElement(pub);
+          publicationsContainer.appendChild(li);
+        });
+        console.log(`Loaded ${data.publications.length} publications`);
+      } else {
+        console.error('Publications container not found!');
+      }
+      
+      // Load preprints
+      const preprintsContainer = document.querySelector('#preprints-list');
+      console.log('Preprints container:', preprintsContainer);
+      
+      if (preprintsContainer && data.preprints) {
+        preprintsContainer.innerHTML = '';
+        
+        data.preprints.forEach(pub => {
+          const li = createPublicationElement(pub);
+          preprintsContainer.appendChild(li);
+        });
+        console.log(`Loaded ${data.preprints.length} preprints`);
+      } else {
+        console.error('Preprints container not found!');
+      }
+      
+    } catch (error) {
+      console.error('Error loading publications:', error);
+    }
+  }
+
+  function createPublicationElement(pub) {
+    const li = document.createElement('li');
+    
+    // Get category color
+    const categoryColors = {
+      'Vision': '#4285f4',
+      'NLP': '#db4437', 
+      'ML': '#0f9d58',
+      'Etc': '#808080'
+    };
+    
+    const categoryColor = categoryColors[pub.category] || '#808080';
+    
+    // Create venue badge
+    let venueBadge = '';
+    if (pub.type) {
+      venueBadge = `<span style="background: ${categoryColor}; color: #ffffff">&nbsp;&nbsp;${pub.venue} ${pub.year} ${pub.type}&nbsp;&nbsp;</span>`;
+    } else {
+      venueBadge = `<span style="background: ${categoryColor}; color: #ffffff">&nbsp;&nbsp;${pub.venue} ${pub.year}&nbsp;&nbsp;</span>`;
+    }
+    
+    // Create links
+    let links = '';
+    if (pub.paper_url) {
+      links += `<a href="${pub.paper_url}">[paper]</a>`;
+    }
+    if (pub.code_url) {
+      if (links) links += ' <span>|</span> ';
+      links += `<a href="${pub.code_url}">[code]</a>`;
+    }
+    if (pub.video_url) {
+      if (links) links += ' <span>|</span> ';
+      links += `<a href="${pub.video_url}">[video]</a>`;
+    }
+    
+    li.innerHTML = `
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          ${venueBadge}
+          <h5>${pub.title}</h5>
+          <span>${pub.authors}</span>
+          ${links ? `<div>${links}</div>` : ''}
+        </div>
+      </div>
+    `;
+    
+    return li;
+  }
+
+  // Load publications when page loads
+  window.addEventListener('load', loadPublications);
+
 })();

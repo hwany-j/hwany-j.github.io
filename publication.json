@@ -2,11 +2,227 @@
     "publications": [
         {
             "order": "0",
+            "title": "Learning Contextual Retrieval for Robust Conversational Search",
+            "authors": "Seunghan Yang, Juntae Lee, Jihwan Bang, Kyuhong Shim, Minsoo Kim, Simyung Chang",
+            "venue": "EMNLP",
+            "year": "2025",
+            "type": "Main Oral",
+            "category": "NLP",
+            "paper_url": "",
+            "code_url": ""
+        },
+        {
+            "order": "1",
+            "title": "CIFLEX: Contextual Instruction Flow for Sub-task Execution in Multi-Turn Interactions with a Single On-Device LLM",
+            "authors": "Juntae Lee, Jihwan Bang, Seunghan Yang, Simyung Chang",
+            "venue": "EMNLP",
+            "year": "2025",
+            "type": "Main",
+            "category": "NLP",
+            "paper_url": "",
+            "code_url": ""
+        },
+        {
+            "order": "2",
+            "title": "ReFeed: Multi-dimensional Summarization Refinement with Reflective Reasoning on Feedback",
+            "authors": "Taewon Yun, Jihwan Oh, Hyangsuk Min, Yuho Lee, Jihwan Bang, Jason Cai, Hwanjun Song",
+            "venue": "CoLM",
+            "year": "2025",
+            "type": "",
+            "category": "NLP",
+            "paper_url": "https://openreview.net/pdf?id=6BGDGKZN7q",
+            "code_url": "https://github.com/DISL-Lab/ReFeed"
+        },
+        {
+            "order": "3",
+            "title": "Chain-of-Rank: Enhancing Large Language Models for Domain-Specific RAG in Edge Device",
+            "authors": "Juntae Lee, Jihwan Bang, Seunghan Yang, Kyuhong Shim, Simyung Chang",
+            "venue": "NAACL",
+            "year": "2025",
+            "type": "Findings",
+            "category": "NLP",
+            "paper_url": "https://aclanthology.org/2025.findings-naacl.311.pdf",
+            "code_url": ""
+        },
+        {
+            "order": "4",
+            "title": "RA-TTA: Retrieval-augmented test-time adaptation for vision-language models",
+            "authors": "Youngjun Lee, Doyoung Kim, Junhyeok Kang, Jihwan Bang, Hwanjun Song, Jae-Gil Lee",
+            "venue": "ICLR",
+            "year": "2025",
+            "type": "",
+            "category": "ML",
+            "paper_url": "https://openreview.net/pdf?id=V3zobHnS61",
+            "code_url": "https://github.com/kaist-dmlab/RA-TTA"
+        },
+        {
+            "order": "5",
             "title": "Prompt-Guided Transformers for End-to-End Open-Vocabulary Object Detection",
             "authors": "Hwanjun Song*, Jihwan Bang*",
-            "venue": "Pattern Recognition",
+            "venue": "PR",
             "year": "2024",
-            "source_code": "None"
+            "type": "",
+            "category": "Vision",
+            "paper_url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=4623541",
+            "code_url": "https://github.com/songhwanjun/Prompt-OVD"
+        },
+        {
+            "order": "6",
+            "title": "Crayon: Customized On-Device LLM via Instant Adapter Blending and Edge-Server Hybrid Inference",
+            "authors": "Jihwan Bang*, Juntae Lee*, Kyuhong Shim, Seunghan Yang, Simyung Chang",
+            "venue": "ACL",
+            "year": "2024",
+            "type": "Main",
+            "category": "NLP",
+            "paper_url": "https://aclanthology.org/2024.acl-long.204.pdf",
+            "code_url": ""
+        },
+        {
+            "order": "7",
+            "title": "One Size Fits All for Semantic Shifts: Adaptive Prompt Tuning for Continual Learning",
+            "authors": "Doyoung Kim, Susik Yoon, Dongmin Park, Youngjun Lee, Hwanjun Song, Jihwan Bang, Jae-Gil Lee",
+            "venue": "ICML",
+            "year": "2024",
+            "type": "",
+            "category": "ML",
+            "paper_url": "https://arxiv.org/pdf/2311.12048",
+            "code_url": ""
+        },
+        {
+            "order": "8",
+            "title": "Active Prompt Learning in Vision Language Models",
+            "authors": "Jihwan Bang, Sumyeong Ahn, Jae-Gil Lee",
+            "venue": "CVPR",
+            "year": "2024",
+            "type": "",
+            "category": "Vision",
+            "paper_url": "https://arxiv.org/pdf/2311.11178.pdf",
+            "code_url": "https://github.com/kaist-dmlab/pcb"
+        },
+        {
+            "order": "9",
+            "title": "Adaptive Shortcut Debiasing for Online Continual Learning",
+            "authors": "Doyoung Kim, Dongmin Park, Yooju Shin, Jihwan Bang, Hwanjun Song, Jae-Gil Lee",
+            "venue": "AAAI",
+            "year": "2024",
+            "type": "",
+            "category": "ML",
+            "paper_url": "https://arxiv.org/pdf/2312.08677.pdf",
+            "code_url": "https://github.com/kaist-dmlab/DropTop"
+        },
+        {
+            "order": "10",
+            "title": "Generating Instance-level Prompts for Rehearsal-free Continual Learning",
+            "authors": "Dahuin Jung, Dongyoon Han, Jihwan Bang, Hwanjun Song",
+            "venue": "ICCV",
+            "year": "2023",
+            "type": "Oral",
+            "category": "Vision",
+            "paper_url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Jung_Generating_Instance-level_Prompts_for_Rehearsal-free_Continual_Learning_ICCV_2023_paper.pdf",
+            "code_url": "https://github.com/naver-ai/dap-cl"
+        },
+        {
+            "order": "11",
+            "title": "Online Boundary-Free Continual Learning by Scheduled Data Prior",
+            "authors": "Hyunseo Koh, Minhyuk Seo, Jihwan Bang, Hwanjun Song, Deokki Hong, Seulki Park, Jung-Woo Ha, Jonghyun Choi",
+            "venue": "ICLR",
+            "year": "2023",
+            "type": "",
+            "category": "ML",
+            "paper_url": "https://openreview.net/pdf?id=qco4ekz2Epm",
+            "code_url": "https://github.com/yonseivnl/sdp"
+        },
+        {
+            "order": "12",
+            "title": "Meta-Query-Net: Resolving Purity-Informativeness Dilemma in Open-set Active Learning",
+            "authors": "Dongmin Park, Yooju Shin, Jihwan Bang, Youngjun Lee, Hwanjun Song, Jae-Gil Lee",
+            "venue": "NeurIPS",
+            "year": "2022",
+            "type": "",
+            "category": "ML",
+            "paper_url": "https://openreview.net/pdf?id=_kZVnosHbV3",
+            "code_url": "https://github.com/kaist-dmlab/MQNet"
+        },
+        {
+            "order": "13",
+            "title": "Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries",
+            "authors": "Jihwan Bang, Hyunseo Koh, Seulki Park, Hwanjun Song, Jung-Woo Ha, Jonghyun Choi",
+            "venue": "CVPR",
+            "year": "2022",
+            "type": "",
+            "category": "Vision",
+            "paper_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Bang_Online_Continual_Learning_on_a_Contaminated_Data_Stream_With_Blurry_CVPR_2022_paper.pdf",
+            "code_url": "https://github.com/clovaai/puridiver",
+            "video_url": "https://www.youtube.com/watch?v=TIYHBYlhL6I&ab_channel=JihwanBang"
+        },
+        {
+            "order": "14",
+            "title": "Rainbow Memory: Continual Learning with a Memory of Diverse Samples",
+            "authors": "Jihwan Bang*, Heesu Kim*, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi",
+            "venue": "CVPR",
+            "year": "2021",
+            "type": "",
+            "category": "Vision",
+            "paper_url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Bang_Rainbow_Memory_Continual_Learning_With_a_Memory_of_Diverse_Samples_CVPR_2021_paper.pdf",
+            "code_url": "https://github.com/clovaai/rainbow-memory",
+            "video_url": "https://www.youtube.com/watch?v=65vxyCKQip4"
+        },
+        {
+            "order": "15",
+            "title": "SINet: Extreme Lightweight Portrait Segmentation Networks with Spatial Squeeze Modules and Information Blocking Decoder",
+            "authors": "Hyojin Park, Lars Lowe Sjösund, Nicolas Monet, YoungJoon Yoo, Jihwan Bang, Nojun Kwak",
+            "venue": "WACV",
+            "year": "2020",
+            "type": "",
+            "category": "Vision",
+            "paper_url": "https://openaccess.thecvf.com/content_WACV_2020/papers/Park_SINet_Extreme_Lightweight_Portrait_Segmentation_Networks_with_Spatial_Squeeze_Module_WACV_2020_paper.pdf",
+            "code_url": "https://github.com/HYOJINPARK/ExtPortraitSeg"
+        },
+        {
+            "order": "16",
+            "title": "CH-MAC: A Cluster-based, Hybrid TDMA MAC Protocol over Wireless Ad-hoc Networks",
+            "authors": "Hoyong Choi, Jihwan Bang, Namjo Ahn, Jinhwan Jung, Jungwook Choi, Soobum Park, Yung Yi",
+            "venue": "MILCOM",
+            "year": "2019",
+            "type": "",
+            "category": "Etc",
+            "paper_url": "https://yung-web.github.io/home/Publication/Conference/HY__Cluster_based_TDMA__Milcom_2019.pdf",
+            "code_url": ""
+        },
+        {
+            "order": "17",
+            "title": "Incentivizing Hosts via Multilateral Cooperation in User-Provided Networks: A Fluid Shapley Value Approach",
+            "authors": "Hyojung Lee, Jihwan Bang, Yung Yi",
+            "venue": "Mobihoc",
+            "year": "2018",
+            "type": "",
+            "category": "Etc",
+            "paper_url": "https://yung-web.github.io/home/Publication/Conference/Incentivizing_hosts_via_multilateral_cooperation_in_user_provided_networks.pdf",
+            "code_url": ""
+        }
+    ],
+    "preprints": [
+        {
+            "order": "0",
+            "title": "Boosting Active Learning for Speech Recognition with Noisy Pseudo-labeled Samples",
+            "authors": "Jihwan Bang*, Heesu Kim*, YoungJoon Yoo, Jung-Woo Ha",
+            "venue": "Arxiv",
+            "year": "2020",
+            "type": "",
+            "category": "Etc",
+            "paper_url": "https://arxiv.org/pdf/2006.11021",
+            "code_url": ""
+        },
+        {
+            "order": "1",
+            "title": "ExtremeC3Net: Extreme Lightweight Portrait Segmentation Networks using Advanced C3-modules",
+            "authors": "Hyojin Park, Lars Lowe Sjösund, YoungJoon Yoo, Jihwan Bang, Nojun Kwak",
+            "venue": "Arxiv",
+            "year": "2019",
+            "type": "",
+            "category": "Etc",
+            "paper_url": "https://arxiv.org/pdf/1908.03093",
+            "code_url": ""
         }
     ]
 }
