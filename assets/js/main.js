@@ -319,7 +319,7 @@
         <div class="flex-grow-1">
           ${venueBadge}
           <h5>${pub.title}</h5>
-          <span>${pub.authors}</span>
+          <span>${pub.authors.replace(/Jihwan Bang/g, '<strong>Jihwan Bang</strong>')}</span>
           ${links ? `<div>${links}</div>` : ''}
         </div>
       </div>
