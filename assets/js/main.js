@@ -249,11 +249,14 @@
       if (publicationsContainer) {
         publicationsContainer.innerHTML = '';
         
-        data.publications.forEach(pub => {
+        // Sort by order descending (largest order number first = most recent)
+        const sortedPublications = [...data.publications].sort((a, b) => parseInt(b.order) - parseInt(a.order));
+        
+        sortedPublications.forEach(pub => {
           const li = createPublicationElement(pub);
           publicationsContainer.appendChild(li);
         });
-        console.log(`Loaded ${data.publications.length} publications`);
+        console.log(`Loaded ${sortedPublications.length} publications`);
       } else {
         console.error('Publications container not found!');
       }
@@ -265,11 +268,14 @@
       if (preprintsContainer && data.preprints) {
         preprintsContainer.innerHTML = '';
         
-        data.preprints.forEach(pub => {
+        // Sort by order descending
+        const sortedPreprints = [...data.preprints].sort((a, b) => parseInt(b.order) - parseInt(a.order));
+        
+        sortedPreprints.forEach(pub => {
           const li = createPublicationElement(pub);
           preprintsContainer.appendChild(li);
         });
-        console.log(`Loaded ${data.preprints.length} preprints`);
+        console.log(`Loaded ${sortedPreprints.length} preprints`);
       } else {
         console.error('Preprints container not found!');
       }
