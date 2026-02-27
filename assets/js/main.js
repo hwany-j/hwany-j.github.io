@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -37,7 +37,7 @@
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       e.preventDefault();
       this.parentNode.classList.toggle('active');
       this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
@@ -118,7 +118,7 @@
     new Waypoint({
       element: item,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = item.querySelectorAll('.progress .progress-bar');
         progress.forEach(el => {
           el.style.width = el.getAttribute('aria-valuenow') + '%';
@@ -137,13 +137,13 @@
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+  document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
@@ -152,8 +152,8 @@
       });
     });
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+      filters.addEventListener('click', function () {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
         this.classList.add('filter-active');
         initIsotope.arrange({
@@ -171,7 +171,7 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
@@ -189,7 +189,7 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener('load', function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -232,26 +232,27 @@
   async function loadPublications() {
     try {
       console.log('Loading publications...');
-      const response = await fetch('./publication.json');
+      // Append a timestamp to prevent browser from caching the JSON file
+      const response = await fetch('./publication.json?t=' + new Date().getTime());
       console.log('Response status:', response.status);
-      
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const data = await response.json();
       console.log('Loaded data:', data);
-      
+
       // Load main publications
       const publicationsContainer = document.querySelector('#publications-list');
       console.log('Publications container:', publicationsContainer);
-      
+
       if (publicationsContainer) {
         publicationsContainer.innerHTML = '';
-        
+
         // Sort by order descending (largest order number first = most recent)
         const sortedPublications = [...data.publications].sort((a, b) => parseInt(b.order) - parseInt(a.order));
-        
+
         sortedPublications.forEach(pub => {
           const li = createPublicationElement(pub);
           publicationsContainer.appendChild(li);
@@ -260,17 +261,17 @@
       } else {
         console.error('Publications container not found!');
       }
-      
+
       // Load preprints
       const preprintsContainer = document.querySelector('#preprints-list');
       console.log('Preprints container:', preprintsContainer);
-      
+
       if (preprintsContainer && data.preprints) {
         preprintsContainer.innerHTML = '';
-        
+
         // Sort by order descending
         const sortedPreprints = [...data.preprints].sort((a, b) => parseInt(b.order) - parseInt(a.order));
-        
+
         sortedPreprints.forEach(pub => {
           const li = createPublicationElement(pub);
           preprintsContainer.appendChild(li);
@@ -279,7 +280,7 @@
       } else {
         console.error('Preprints container not found!');
       }
-      
+
     } catch (error) {
       console.error('Error loading publications:', error);
     }
@@ -287,17 +288,17 @@
 
   function createPublicationElement(pub) {
     const li = document.createElement('li');
-    
+
     // Get category color
     const categoryColors = {
       'Vision': '#4285f4',
-      'NLP': '#db4437', 
+      'NLP': '#db4437',
       'ML': '#0f9d58',
       'Etc': '#808080'
     };
-    
+
     const categoryColor = categoryColors[pub.category] || '#808080';
-    
+
     // Create venue badge
     let venueBadge = '';
     if (pub.type) {
@@ -305,7 +306,7 @@
     } else {
       venueBadge = `<span style="background: ${categoryColor}; color: #ffffff">&nbsp;&nbsp;${pub.venue} ${pub.year}&nbsp;&nbsp;</span>`;
     }
-    
+
     // Create links
     let links = '';
     if (pub.paper_url) {
@@ -319,7 +320,7 @@
       if (links) links += ' <span>|</span> ';
       links += `<a href="${pub.video_url}">[video]</a>`;
     }
-    
+
     li.innerHTML = `
       <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="flex-grow-1">
@@ -330,7 +331,7 @@
         </div>
       </div>
     `;
-    
+
     return li;
   }
 
