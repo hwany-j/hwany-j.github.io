@@ -299,33 +299,48 @@
     <section id="publications" class="resume section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Publications</h2>
-        <span class="mb-5">
+        <p class="publication-note">
           * authors contributed equally. See also my
-          <a href="https://scholar.google.com/citations?user=molKYzwAAAAJ&amp;hl=ko">Google Scholar</a>
-          <span>.</span>
-        </span>
-        <br />
-        <span class="mb-5">
-          <span style="background: #4285f4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          Vision(CVPR, ICCV, ECCV, WACV, BMVC)&nbsp;&nbsp;&nbsp;
-        </span>
-        <span style="background: #db4437">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        NLP(ACL, EMNLP, NAACL, EACL)&nbsp;&nbsp;&nbsp;
-        <span style="background: #0f9d58">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        ML(ICML, ICLR, NeurIPS, AAAI)&nbsp;&nbsp;&nbsp;
-        <span style="background: #808080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        Etc.
-        <br />
-        <br />
-        <br />
-        <h4 class="mb-5">Conferences & Journals</h4>
-        <ul class="fa-ul mb-0" id="publications-list">
-          <!-- Publications will be loaded dynamically from publication.json -->
-        </ul>
-        <h4 class="mb-5">Preprints (ArXiv)</h4>
-        <ul class="fa-ul mb-0" id="preprints-list">
-          <!-- Preprints will be loaded dynamically from publication.json -->
-        </ul>
+          <a href="https://scholar.google.com/citations?user=molKYzwAAAAJ&amp;hl=ko">Google Scholar</a>.
+        </p>
+        <div class="publication-legend" aria-label="Publication categories">
+          <span class="publication-legend-item">
+            <span class="publication-legend-swatch vision"></span>
+            Vision
+          </span>
+          <span class="publication-legend-item">
+            <span class="publication-legend-swatch nlp"></span>
+            NLP
+          </span>
+          <span class="publication-legend-item">
+            <span class="publication-legend-swatch ml"></span>
+            ML
+          </span>
+          <span class="publication-legend-item">
+            <span class="publication-legend-swatch etc"></span>
+            Etc.
+          </span>
+        </div>
+      </div>
+      <div class="container publication-layout" data-aos="fade-up" data-aos-delay="100">
+        <div class="publication-block">
+          <div class="publication-block-header">
+            <h4>Conferences &amp; Journals</h4>
+            <p>Selected papers grouped by year, with the latest work surfaced first.</p>
+          </div>
+          <div id="publications-list" class="publication-year-grid">
+            <!-- Publications will be loaded dynamically from publication.json -->
+          </div>
+        </div>
+        <div class="publication-block">
+          <div class="publication-block-header">
+            <h4>Preprints (ArXiv)</h4>
+            <p>Working drafts and early-stage research notes.</p>
+          </div>
+          <div id="preprints-list" class="publication-year-grid">
+            <!-- Preprints will be loaded dynamically from publication.json -->
+          </div>
+        </div>
       </div>
     </section>
     <hr class="m-0" />

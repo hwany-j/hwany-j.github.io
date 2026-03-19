@@ -248,16 +248,8 @@
       console.log('Publications container:', publicationsContainer);
 
       if (publicationsContainer) {
-        publicationsContainer.innerHTML = '';
-
-        // Sort by order descending (largest order number first = most recent)
-        const sortedPublications = [...data.publications].sort((a, b) => parseInt(b.order) - parseInt(a.order));
-
-        sortedPublications.forEach(pub => {
-          const li = createPublicationElement(pub);
-          publicationsContainer.appendChild(li);
-        });
-        console.log(`Loaded ${sortedPublications.length} publications`);
+        renderPublicationGroups(publicationsContainer, data.publications);
+        console.log(`Loaded ${data.publications.length} publications`);
       } else {
         console.error('Publications container not found!');
       }
@@ -267,16 +259,8 @@
       console.log('Preprints container:', preprintsContainer);
 
       if (preprintsContainer && data.preprints) {
-        preprintsContainer.innerHTML = '';
-
-        // Sort by order descending
-        const sortedPreprints = [...data.preprints].sort((a, b) => parseInt(b.order) - parseInt(a.order));
-
-        sortedPreprints.forEach(pub => {
-          const li = createPublicationElement(pub);
-          preprintsContainer.appendChild(li);
-        });
-        console.log(`Loaded ${sortedPreprints.length} preprints`);
+        renderPublicationGroups(preprintsContainer, data.preprints);
+        console.log(`Loaded ${data.preprints.length} preprints`);
       } else {
         console.error('Preprints container not found!');
       }
@@ -286,10 +270,52 @@
     }
   }
 
-  function createPublicationElement(pub) {
-    const li = document.createElement('li');
+  function sortPublications(publications) {
+    return [...publications].sort((a, b) => parseInt(b.order) - parseInt(a.order));
+  }
 
-    // Get category color
+  function groupPublicationsByYear(publications) {
+    return sortPublications(publications).reduce((groups, pub) => {
+      const year = pub.year || 'Unknown';
+      if (!groups[year]) {
+        groups[year] = [];
+      }
+      groups[year].push(pub);
+      return groups;
+    }, {});
+  }
+
+  function renderPublicationGroups(container, publications) {
+    container.innerHTML = '';
+    const groupedPublications = groupPublicationsByYear(publications);
+
+    Object.keys(groupedPublications)
+      .sort((a, b) => parseInt(b) - parseInt(a))
+      .forEach(year => {
+        const yearSection = document.createElement('section');
+        yearSection.className = 'publication-year-section';
+
+        const yearHeader = document.createElement('div');
+        yearHeader.className = 'publication-year-header';
+        yearHeader.innerHTML = `<span class="publication-year-label">${year}</span><span class="publication-year-count">${groupedPublications[year].length} item${groupedPublications[year].length > 1 ? 's' : ''}</span>`;
+
+        const yearList = document.createElement('div');
+        yearList.className = 'publication-list';
+
+        groupedPublications[year].forEach(pub => {
+          yearList.appendChild(createPublicationElement(pub));
+        });
+
+        yearSection.appendChild(yearHeader);
+        yearSection.appendChild(yearList);
+        container.appendChild(yearSection);
+      });
+  }
+
+  function createPublicationElement(pub) {
+    const article = document.createElement('article');
+    article.className = 'publication-card';
+
     const categoryColors = {
       'Vision': '#4285f4',
       'NLP': '#db4437',
@@ -299,15 +325,8 @@
 
     const categoryColor = categoryColors[pub.category] || '#808080';
 
-    // Create venue badge
-    let venueBadge = '';
-    if (pub.type) {
-      venueBadge = `<span style="background: ${categoryColor}; color: #ffffff">&nbsp;&nbsp;${pub.venue} ${pub.year} ${pub.type}&nbsp;&nbsp;</span>`;
-    } else {
-      venueBadge = `<span style="background: ${categoryColor}; color: #ffffff">&nbsp;&nbsp;${pub.venue} ${pub.year}&nbsp;&nbsp;</span>`;
-    }
+    const venueText = pub.type ? `${pub.venue} ${pub.type}` : pub.venue;
 
-    // Create links
     let links = '';
     if (pub.paper_url) {
       links += `<a href="${pub.paper_url}">[paper]</a>`;
@@ -321,18 +340,17 @@
       links += `<a href="${pub.video_url}">[video]</a>`;
     }
 
-    li.innerHTML = `
-      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-        <div class="flex-grow-1">
-          ${venueBadge}
-          <h5>${pub.title}</h5>
-          <span>${pub.authors.replace(/Jihwan Bang/g, '<strong>Jihwan Bang</strong>')}</span>
-          ${links ? `<div>${links}</div>` : ''}
-        </div>
+    article.innerHTML = `
+      <div class="publication-card-meta">
+        <span class="publication-badge" style="--publication-category-color: ${categoryColor};">${venueText}</span>
+        <span class="publication-category">${pub.category}</span>
       </div>
+      <h5 class="publication-title">${pub.title}</h5>
+      <p class="publication-authors">${pub.authors.replace(/Jihwan Bang/g, '<strong>Jihwan Bang</strong>')}</p>
+      ${links ? `<div class="publication-links">${links}</div>` : ''}
     `;
 
-    return li;
+    return article;
   }
 
   // Load publications when page loads

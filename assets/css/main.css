@@ -778,6 +778,210 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Publications Section
+--------------------------------------------------------------*/
+.publication-note {
+  max-width: 760px;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+
+.publication-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.publication-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), white 94%);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.publication-legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.publication-legend-swatch.vision {
+  background: #4285f4;
+}
+
+.publication-legend-swatch.nlp {
+  background: #db4437;
+}
+
+.publication-legend-swatch.ml {
+  background: #0f9d58;
+}
+
+.publication-legend-swatch.etc {
+  background: #808080;
+}
+
+.publication-layout {
+  display: grid;
+  gap: 48px;
+}
+
+.publication-block-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.publication-block-header h4 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.publication-block-header p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.publication-year-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.publication-year-section {
+  position: relative;
+  padding: 28px 28px 28px 32px;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color), white 94%), #ffffff 55%),
+    var(--surface-color);
+  box-shadow: 0 18px 50px rgba(5, 13, 24, 0.08);
+  overflow: hidden;
+}
+
+.publication-year-section::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(180deg, var(--accent-color), color-mix(in srgb, var(--accent-color), white 50%));
+}
+
+.publication-year-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.publication-year-label {
+  font-family: var(--heading-font);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--heading-color);
+}
+
+.publication-year-count {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+}
+
+.publication-list {
+  display: grid;
+  gap: 18px;
+}
+
+.publication-card {
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  backdrop-filter: blur(8px);
+}
+
+.publication-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.publication-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--publication-category-color);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.publication-category {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.publication-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.publication-authors {
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.7;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+.publication-links span {
+  color: color-mix(in srgb, var(--default-color), transparent 55%);
+}
+
+@media (max-width: 768px) {
+  .publication-year-section {
+    padding: 22px 18px 22px 22px;
+    border-radius: 20px;
+  }
+
+  .publication-year-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .publication-year-label {
+    font-size: 24px;
+  }
+
+  .publication-title {
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
