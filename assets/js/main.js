@@ -9,6 +9,9 @@
 (function () {
   "use strict";
 
+  let allPublications = [];
+  let activePublicationCategories = new Set(['Vision', 'NLP', 'ML', 'Etc']);
+
   /**
    * Header toggle
    */
@@ -248,21 +251,15 @@
       console.log('Publications container:', publicationsContainer);
 
       if (publicationsContainer) {
-        renderPublicationGroups(publicationsContainer, data.publications);
-        console.log(`Loaded ${data.publications.length} publications`);
+        allPublications = [
+          ...(data.publications || []),
+          ...(data.preprints || []).map(pub => ({ ...pub, collection: 'Preprint' }))
+        ];
+        initPublicationFilters();
+        renderFilteredPublications();
+        console.log(`Loaded ${allPublications.length} publications`);
       } else {
         console.error('Publications container not found!');
-      }
-
-      // Load preprints
-      const preprintsContainer = document.querySelector('#preprints-list');
-      console.log('Preprints container:', preprintsContainer);
-
-      if (preprintsContainer && data.preprints) {
-        renderPublicationGroups(preprintsContainer, data.preprints);
-        console.log(`Loaded ${data.preprints.length} preprints`);
-      } else {
-        console.error('Preprints container not found!');
       }
 
     } catch (error) {
@@ -289,6 +286,11 @@
     container.innerHTML = '';
     const groupedPublications = groupPublicationsByYear(publications);
 
+    if (Object.keys(groupedPublications).length === 0) {
+      container.innerHTML = '<div class="publication-empty-state">No publications match the selected categories.</div>';
+      return;
+    }
+
     Object.keys(groupedPublications)
       .sort((a, b) => parseInt(b) - parseInt(a))
       .forEach(year => {
@@ -312,6 +314,48 @@
       });
   }
 
+  function initPublicationFilters() {
+    document.querySelectorAll('.publication-legend-item[data-category]').forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.dataset.category;
+        const isAllActive = activePublicationCategories.size === 4;
+
+        if (isAllActive) {
+          activePublicationCategories = new Set([category]);
+        } else if (activePublicationCategories.has(category)) {
+          activePublicationCategories.delete(category);
+        } else {
+          activePublicationCategories.add(category);
+        }
+
+        if (activePublicationCategories.size === 0) {
+          activePublicationCategories = new Set(['Vision', 'NLP', 'ML', 'Etc']);
+        }
+
+        syncPublicationFilterButtons();
+        renderFilteredPublications();
+      });
+    });
+
+    syncPublicationFilterButtons();
+  }
+
+  function syncPublicationFilterButtons() {
+    document.querySelectorAll('.publication-legend-item[data-category]').forEach(button => {
+      const isActive = activePublicationCategories.has(button.dataset.category);
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+  }
+
+  function renderFilteredPublications() {
+    const publicationsContainer = document.querySelector('#publications-list');
+    if (!publicationsContainer) return;
+
+    const filteredPublications = allPublications.filter(pub => activePublicationCategories.has(pub.category));
+    renderPublicationGroups(publicationsContainer, filteredPublications);
+  }
+
   function createPublicationElement(pub) {
     const article = document.createElement('article');
     article.className = 'publication-card';
@@ -325,7 +369,14 @@
 
     const categoryColor = categoryColors[pub.category] || '#808080';
 
-    const venueText = pub.type ? `${pub.venue} ${pub.type}` : pub.venue;
+    const venueParts = [pub.venue];
+    if (pub.type) {
+      venueParts.push(pub.type);
+    }
+    if (pub.collection) {
+      venueParts.push(pub.collection);
+    }
+    const venueText = venueParts.join(' ');
 
     let links = '';
     if (pub.paper_url) {

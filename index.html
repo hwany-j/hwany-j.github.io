@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Jihwan Bang | Senior AI Researcher</title>
+  <meta content="Jihwan Bang is a Senior AI Researcher working on efficient AI, RAG, continual learning, and vision-language systems." name="description">
+  <meta content="Jihwan Bang, AI Researcher, Machine Learning, RAG, Continual Learning, Vision Language Models" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -28,7 +28,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260319-13" rel="stylesheet">
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -70,7 +70,6 @@
         <li><a href="#talks"><i class="bi bi-person-video3 navicon"></i> Talks</a></li>
         <li><a href="#patents"><i class="bi bi-lightbulb navicon"></i> Patents</a></li>
         <li><a href="#awards"><i class="bi bi-trophy navicon"></i> Awards</a></li>
-
       </ul>
     </nav>
 
@@ -84,10 +83,14 @@
       <img src="assets/img/bg_img.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <span class="hero-kicker">Senior AI Researcher</span>
         <h2>Jihwan Bang</h2>
         <p>I'm <span class="typed" data-typed-items="Researcher, Engineer"></span><span
             class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
             class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <div class="hero-summary">
+          Building efficient AI systems across retrieval-augmented generation, continual learning, and on-device intelligence.
+        </div>
       </div>
 
     </section><!-- /Hero Section -->
@@ -122,21 +125,23 @@
           and serves as an active reviewer for major conferences.
         </p>
 
-        <a href="assets/Bang_Jihwan_Resume.pdf" download>
-          <i class="fas fa-download" style="font-size: 24px; color: #007bff;"></i> Download CV
+        <a href="assets/Bang_Jihwan_Resume.pdf" download class="cv-link">
+          <i class="fas fa-download"></i> Download CV
         </a>
 
         <div class="skills">
           <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row skills-content">
-              <div class="resume col-lg-6">
+            <div class="row skills-content about-detail-grid">
+              <div class="resume col-lg-6 about-interest-column">
                 <h3 class="resume-title">Research Interest</h3>
-                <h5 style="padding-left: 20px;">&bull; Retrieval Augmented Generation (RAG)</h5>
-                <h5 style="padding-left: 20px;">&bull; Large Language Model (LLM)</h5>
-                <h5 style="padding-left: 20px;">&bull; Vision Language Model</h5>
-                <h5 style="padding-left: 20px;">&bull; Continual / Lifelong Learning</h5>
-                <h5 style="padding-left: 20px;">&bull; Active Learning</h5>
-                <h5 style="padding-left: 20px;">&bull; On-device Learning</h5>
+                <ul class="about-interest-list">
+                  <li class="about-interest-item">Retrieval Augmented Generation (RAG)</li>
+                  <li class="about-interest-item">Large Language Model (LLM)</li>
+                  <li class="about-interest-item">Vision Language Model</li>
+                  <li class="about-interest-item">Continual / Lifelong Learning</li>
+                  <li class="about-interest-item">Active Learning</li>
+                  <li class="about-interest-item">On-device Learning</li>
+                </ul>
 
                 <!-- <div class="progress">
                 <span class="skill"><span>Continual/Lifelong Learning</span> <i class="val">100%</i></span>
@@ -145,7 +150,7 @@
                 </div>
               </div>End Skills Item -->
               </div>
-              <div class="resume col-lg-6">
+              <div class="resume col-lg-6 about-education-column">
                 <h3 class="resume-title">Education</h3>
                 <div class="resume-item">
                   <!-- <h4>Master of Electrical &amp; Engineering</h4> -->
@@ -223,6 +228,9 @@
     <section id="projects" class="resume section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
+      </div>
+
+      <div class="container section-card-shell" data-aos="fade-up" data-aos-delay="100">
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
             <h4 class="mb-0">Qualcomm AI Orchestrator (QAIOR)</h4>
@@ -304,57 +312,50 @@
           <a href="https://scholar.google.com/citations?user=molKYzwAAAAJ&amp;hl=ko">Google Scholar</a>.
         </p>
         <div class="publication-legend" aria-label="Publication categories">
-          <span class="publication-legend-item">
+          <button type="button" class="publication-legend-item is-active" data-category="Vision" aria-pressed="true">
             <span class="publication-legend-swatch vision"></span>
             Vision
-          </span>
-          <span class="publication-legend-item">
+          </button>
+          <button type="button" class="publication-legend-item is-active" data-category="NLP" aria-pressed="true">
             <span class="publication-legend-swatch nlp"></span>
             NLP
-          </span>
-          <span class="publication-legend-item">
+          </button>
+          <button type="button" class="publication-legend-item is-active" data-category="ML" aria-pressed="true">
             <span class="publication-legend-swatch ml"></span>
             ML
-          </span>
-          <span class="publication-legend-item">
+          </button>
+          <button type="button" class="publication-legend-item is-active" data-category="Etc" aria-pressed="true">
             <span class="publication-legend-swatch etc"></span>
             Etc.
-          </span>
+          </button>
         </div>
       </div>
       <div class="container publication-layout" data-aos="fade-up" data-aos-delay="100">
         <div class="publication-block">
           <div class="publication-block-header">
-            <h4>Conferences &amp; Journals</h4>
-            <p>Selected papers grouped by year, with the latest work surfaced first.</p>
+            <h4>Selected Publications</h4>
+            <p>Conference papers, journal articles, and preprints grouped together by year.</p>
           </div>
           <div id="publications-list" class="publication-year-grid">
             <!-- Publications will be loaded dynamically from publication.json -->
           </div>
         </div>
-        <div class="publication-block">
-          <div class="publication-block-header">
-            <h4>Preprints (ArXiv)</h4>
-            <p>Working drafts and early-stage research notes.</p>
-          </div>
-          <div id="preprints-list" class="publication-year-grid">
-            <!-- Preprints will be loaded dynamically from publication.json -->
-          </div>
-        </div>
       </div>
     </section>
     <hr class="m-0" />
-    </section><!-- /Portfolio Section -->
 
-    <!-- Services Section -->
+    <!-- Talks Section -->
     <section id="talks" class="talks section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Talks</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container section-card-shell" data-aos="fade-up" data-aos-delay="100">
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-            <h5 class="mb-0">[T4] Data-centric AI: Data collecting, labeling, and synthesizing</h5>
+            <h5 class="mb-0">Data-centric AI: Data collecting, labeling, and synthesizing</h5>
             <div class="subheading mb-3">KENTECH</div>
           </div>
           <div class="flex-shrink-0">
@@ -363,7 +364,7 @@
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-            <h5 class="mb-0">[T3] From Data Processing To Moedl Deploy: Introduction and Research Trends in MLOps
+            <h5 class="mb-0">From Data Processing To Moedl Deploy: Introduction and Research Trends in MLOps
               Pipeline</h5>
             <div class="subheading mb-3">Chung-Ang University (CAU)</div>
           </div>
@@ -373,7 +374,7 @@
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-            <h5 class="mb-0">[T2] Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries
+            <h5 class="mb-0">Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries
             </h5>
             <div class="subheading mb-3">Korean Artificial Intelligence Association (KAIA)</div>
           </div>
@@ -383,7 +384,7 @@
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-            <h5 class="mb-0">[T1] Low Price, High Quality: Improve Model Performance with Small Labelling Cost</h5>
+            <h5 class="mb-0">Low Price, High Quality: Improve Model Performance with Small Labelling Cost</h5>
             <div class="subheading mb-3">NAVER DEVIEW</div>
             <div>
               <a href="https://www.slideshare.net/JihwanBang/low-price-high-quality-naver-deview-2020">[slide]</a>
@@ -395,11 +396,14 @@
             <p class="text-primary">Nov. 2020</p>
           </div>
         </div>
-      </div><!-- End Section Title -->
+      </div>
 
 
-      <div class="container section-title" data-aos="fade-up" style="font-size: 18px; line-height: 1.8;">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Reviews</h2>
+      </div>
+
+      <div class="container section-card-shell section-card-shell-compact" data-aos="fade-up" data-aos-delay="100" style="font-size: 18px; line-height: 1.8;">
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
             <h5 class="mb-0">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</h5>
@@ -457,75 +461,73 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Patents-->
-      <section id="patents" class="patents section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Patents</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h5>[P4] Memory-Efficient Generative Machine Learning Models with Long Input Prompts</h5>
-              <div>US 19/009175</div>
-            </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h5>[P3] Personalized Machine Learning Model Adapters</h5>
-              <div>US 18/493286</div>
-            </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h5>[P2] Face Recognition System and Method for Controlling the Same</h5>
-              <div>kr 10-2021-0183218</div>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h5>[P1] Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency
-                Regularization</h5>
-              <div>kr 10-2020-0111929</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="m-0" />
-
-      <!-- Awards -->
-      <section id="awards" class="awards section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Awards</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                  <h5 class="fa-li"><i class="fas fa-award"></i></h5>
-                  <h5>CLOVA WOW(Innovative) Project: FaceSign</h5>
-                  <div>NAVER CLOVA</div>
-                </div>
-                <div class="flex-shrink-1">
-                  <p class="text-primary">2021</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                  <h5 class="fa-li"><i class="fas fa-award"></i></h5>
-                  <h5>National Science & Technology Scholarship</h5>
-                  <div>Korean Scholarship Foundation</div>
-                </div>
-                <div class="flex-shrink-1">
-                  <p class="text-primary">2012-2015</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr class="m-0" />
+    <!-- Patents-->
+    <section id="patents" class="patents section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Patents</h2>
       </div>
+
+      <div class="container section-card-shell" data-aos="fade-up" data-aos-delay="100">
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h5>Memory-Efficient Generative Machine Learning Models with Long Input Prompts</h5>
+            <div>US 19/009175</div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h5>Personalized Machine Learning Model Adapters</h5>
+            <div>US 18/493286</div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h5>Face Recognition System and Method for Controlling the Same</h5>
+            <div>kr 10-2021-0183218</div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h5>Efficient Active Learning for Automatic Speech Recognition via Augmented Consistency
+              Regularization</h5>
+            <div>kr 10-2020-0111929</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Awards -->
+    <section id="awards" class="awards section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Awards</h2>
+      </div>
+
+      <div class="container section-card-shell" data-aos="fade-up" data-aos-delay="100">
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h5>CLOVA WOW(Innovative) Project: FaceSign</h5>
+            <div>NAVER CLOVA</div>
+          </div>
+          <div class="flex-shrink-0">
+            <p class="text-primary">2021</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h5>National Science & Technology Scholarship</h5>
+            <div>Korean Scholarship Foundation</div>
+          </div>
+          <div class="flex-shrink-0">
+            <p class="text-primary">2012-2015</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
 
   </main>
 
@@ -567,7 +569,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20260319-2"></script>
 
 </body>
 
