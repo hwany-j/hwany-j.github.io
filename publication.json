@@ -1,6 +1,61 @@
 {
     "publications": [
         {
+            "order": "23",
+            "title": "Training-Free Active Test-Time Adaptation for Vision-Language Models",
+            "authors": "Jihwan Bang, Sumyeong Ahn, Hwanjun Song, Jae-Gil Lee",
+            "venue": "NeurIPS",
+            "year": "2026",
+            "type": "",
+            "category": "ML",
+            "paper_url": "",
+            "code_url": ""
+        },
+        {
+            "order": "22",
+            "title": "From Monolithic Prompts to Scaffolded Execution for Memory Agents with Small Language Models",
+            "authors": "Seunghan Yang, Jihwan Bang, Sungha Choi, Juntae Lee",
+            "venue": "EMNLP",
+            "year": "2026",
+            "type": "Findings",
+            "category": "NLP",
+            "paper_url": "https://aclanthology.org/2026.findings-emnlp.968.pdf",
+            "code_url": ""
+        },
+        {
+            "order": "21",
+            "title": "Foundation First: Stabilizing SLM Agents via Pre-execution Logical Scaffolding",
+            "authors": "Juntae Lee, Jihwan Bang, Seunghan Yang, Sungha Choi",
+            "venue": "EMNLP",
+            "year": "2026",
+            "type": "Workshop",
+            "category": "NLP",
+            "paper_url": "https://aclanthology.org/2026.realm-1.11.pdf",
+            "code_url": ""
+        },
+        {
+            "order": "20",
+            "title": "Feedback Adaptation for Retrieval-Augmented Generation",
+            "authors": "Jihwan Bang, Seunghan Yang, Kyuhong Shim, Simyung Chang, Juntae Lee, Sungha Choi",
+            "venue": "ACL",
+            "year": "2026",
+            "type": "Findings",
+            "category": "NLP",
+            "paper_url": "https://aclanthology.org/2026.findings-acl.1419.pdf",
+            "code_url": ""
+        },
+        {
+            "order": "19",
+            "title": "Breaking the Reference Bottleneck via Learning to Rewrite Conversational Queries without Gold Reference Passages",
+            "authors": "Doyoung Kim, Youngjun Lee, Joeun Kim, Jihwan Bang, Hwanjun Song, Susik Yoon, Jae-Gil Lee",
+            "venue": "ICML",
+            "year": "2026",
+            "type": "",
+            "category": "ML",
+            "paper_url": "https://openreview.net/pdf?id=QPRQHxrFLQ",
+            "code_url": ""
+        },
+        {
             "order": "18",
             "title": "Think Straight, Stop Smart: Structured Reasoning for Efficient Multi-Hop RAG",
             "authors": "Jihwan Bang, Juntae Lee, Seunghan Yang, Juntae Lee",
